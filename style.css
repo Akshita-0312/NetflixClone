@@ -1,0 +1,391 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .container{
+    min-width: 100%;
+} 
+
+.main{
+
+    height: 93vh;
+    width: 100%;
+    background-image: url("asset/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    height: 6.8rem;
+    opacity: 0.8;
+}
+
+#language{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.sign-in{
+    background-color: red;
+    color: white;
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px;
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.9rem;
+    max-width: 78%;
+    margin: auto;
+}
+
+.nav-bar-signin{
+    padding: 1.5rem;
+}
+
+.main-description{
+    color: white;
+    /* max-width: 78%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+   align-content: center;
+   gap: 2rem;
+   margin: 11rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.main-heading{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-para{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.email{
+   padding: 1rem;
+   background-color: rgb(0, 0, 0);
+   opacity: 0.6;
+   border: 2px solid white;
+   padding-right: 6rem;
+   border-radius: 0.3rem;
+}
+
+input[type="text"]{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.main-started{
+  background-color: red;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1rem;
+  border: 2px;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.main-line
+{
+    height: 0.7rem;
+    background-color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width:990px)
+{
+   .main-heading{
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .main-para{
+    font-size: 1.3rem;
+    text-align: center;
+   }
+   .nav-bar{
+    max-width: 100%;
+   }
+   .main-description{
+    margin-top:7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   }
+  
+}
+
+@media screen and (max-width:670px)
+{
+    .started{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+}
+
+.TVs{
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+}
+
+.enjoy-tv{
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem;
+    gap: 10rem;
+}
+
+.enjoy-description{
+    color: white;
+    padding-top: 2.5rem;
+}
+
+.enjoy-tv-image{
+    height: 250px;
+}
+
+.enjoy-heading{
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.enjoy-theory{
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width:1350px)
+{
+    .TVs{
+        height: 100%;
+    }
+    .enjoy-tv{
+        padding:26px 1.2rem;
+        gap: 7rem;
+    }
+    .enjoy-tv-second{
+        padding:26px 1.2rem;
+        gap: 7rem;
+    }
+    .enjoy-heading{
+        font-size: 2.7rem;
+    }
+    .enjoy-theory{
+        font-size: 1.5rem;
+    }
+}
+
+ @media screen and (max-width:1000px)
+{
+    .enjoy-tv{
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .enjoy-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .enjoy-heading{
+       font-size: 2.5rem;
+       text-align: center;
+    }
+    .enjoy-theory{
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .enjoy-tv-image{
+         height: 180px;
+    }
+    .enjoy-tv-second{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}  */
+
+/*Frequently Asked Question*/
+ .question-box{
+   width: 100%;  
+}
+
+.FAQ{
+    background-color: black;
+ padding: 2.6rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 1.65rem;
+ color: white;
+}
+ 
+.FAQ_visible{
+    display: grid;
+     grid-template-columns: repeat(1,1fr); 
+    gap: 0.5rem;
+} 
+
+ .question{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(45, 44, 44);
+    width: 78vw;
+    transition: background-color 1s linear;
+    font-size: 1.5rem;
+    padding:2rem 1.3rem;
+    cursor: pointer;
+} 
+
+
+.answer {
+    display: none;
+    margin-top: 2px;
+    background-color: rgb(45, 44, 44);
+    width: 78vw;
+    transition: background-color 1s linear;
+    font-size: 1.4rem;
+    padding:1.4rem 1.3rem;
+}
+
+.question:hover{
+ background-color: rgb(88, 84, 84);
+}
+
+
+.FAQ-heading{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.FAQ-description{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:950px)
+{
+   .FAQ-description
+   {
+    font-size: 2.5rem;
+    font-weight: normal;
+   }
+   .question{
+    font-size: 1.2rem;
+   }
+   .membership-head-desc{
+    text-align: center;
+   }
+}
+
+/*Membership*/
+.membership-container{
+ width: 100%;
+ background-color: black;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+.membership
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    padding-bottom:3.3rem;
+}
+
+.membership-heading{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+/*Footer*/
+ .footer-container{
+    background-color: black;
+    width: 100%; 
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 1.1rem;
+    color: rgb(206, 203, 203);
+    padding: 3.5rem 11rem;
+}
+
+.footer-middle{
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ align-content: space-between;
+ gap: 9.1rem;
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+li,a{
+    color: rgb(206, 203, 203);
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
